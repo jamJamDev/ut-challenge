@@ -41,7 +41,7 @@ h3 {
 .header-container {
     background-image: url('../images/disney-princess-header.jpg');
     background-size: cover;
-    height: 325px;
+    height: 290px;
     background-position: 0 30%;
 }
 
@@ -67,9 +67,17 @@ h3 {
     text-transform: uppercase; /**catch typos!**/
 }
 
+.content-wrapper {
+    height: 510px;
+    margin: 0 50px 50px 50px;
+    border-bottom: dashed;
+    border-bottom-color: #eeeeee;
+}
+
 .info-content {
     width: 60vw;
-    margin: 50px;
+    margin: 20px 30px 0 0;
+    float: left;
 }
 
 .packing-info {
@@ -137,3 +145,34 @@ h3 {
     font-size: 1.2em;
     margin-right: 10px;
 }
+
+.mail-form {
+    width: 28vw;
+    height: 440px;
+    background-color: #d8eeef;
+    float: right;
+    margin-top: -56px;
+}
+
+.mail-form:after {
+    content:'';
+    position: absolute;
+    right: 165px;
+    bottom: 265px;
+    width: 0;
+    height: 0;
+    border-top: solid 32px #d8eeef;
+    border-left: solid 50px transparent;
+    border-right: solid 50px transparent;
+}
+
+.footer {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.footer-text {
+    font-family: 'ProximaNova-RegularItalic';
+    color: #48abd9;
+}
+
