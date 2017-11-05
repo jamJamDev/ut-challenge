@@ -161,7 +161,7 @@ h3 {
     text-align: center;
 }
 
-.mail-form {
+.mail-form-container {
     width: 28vw;
     height: 440px;
     background-color: #d8eeef;
@@ -169,19 +169,27 @@ h3 {
     padding: 10px;
 }
 
-.avatar-container {
-    width: 125px;
-    height: 125px;
-    overflow: hidden;
-    border-radius: 50%;
-    margin-left: 30%
+.mail-form label,
+.mail-form input {
+    display: block;
 }
 
-.mail-form-avatar {
-    display: inline;
-    height: 100%;
-    width: auto;
-    margin-left: -16%;
+.first-name {
+    margin-right: 10px;
+}
+
+.first-name,
+.left-name {
+    float: left;
+}
+
+.avatar-image {
+    background-image: url('../images/avatar.jpg');
+    width: 175px;
+    height: 175px;
+    background-position: 50% 50%;
+    border-radius: 100px;
+    display: inline-block;
 }
 
 .mail-form-triangle {
