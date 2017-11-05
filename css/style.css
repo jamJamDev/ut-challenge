@@ -219,6 +219,10 @@ h3 {
     right: -7px;
 }
 
+.close-btn:hover {
+    cursor: pointer;
+}
+
 .close-text-1 {
     font-family: 'ProximaNova-Bold';
     color: #216071;
