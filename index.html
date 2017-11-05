@@ -52,18 +52,48 @@
         <div class="right-side">
             <div class="mail-form-container" id="mailFormContainer">
                 <div class="avatar-image" id="avatarImage"></div>
+                <div class="mail-me-text" id="mailMeText">MAIL ME AN ITINERARY</div>
                 <form class="mail-form" id="mailForm">
                     <section>
                         <div class="first-name" id="firstName">
                             <label>First Name:</label>
-                            <input>
+                            <input class="first-name-text" id="firstNameText" type="text" name="firstName" placeholder="Leap">
                         </div>
                         <div class="last-name" id="lastName">
                             <label>Last Name:</label>
-                            <input>
+                            <input class="last-name-text" id="last-name-text" type="text" name="lastName" placeholder="Frog">
                         </div>
-                        <br style="clear:both">
                     </section>
+
+                    <section>
+                        <div class="address" id="address">
+                            <label>Address</label>
+                            <input type="text" name="address" placeholder="301 Frog Pond Road">
+                        </div>
+                    </section>
+
+                    <section>
+                        <div class="city" id="city">
+                            <lable>City</lable>
+                            <input type="text" name="city" placeholder="Austin">
+                        </div>
+
+                        <div>
+                            <label>State</label>
+                            <select>
+                                <option value="MS">MS</option>
+                                <option value="TX" selected="selected">TX</option>
+                                <option value="WI">WI</option>
+                                <option value="AL">AL</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label>Zip</label>
+                            <input type="text" name="zip" placeholder="34210">
+                        </div>
+                    </section>
+                    <button type="submit">SIGN ME UP</button>
                 </form>
             </div>
             <div class="mail-form-triangle" id="mailFormTriangle"></div>
