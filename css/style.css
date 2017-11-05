@@ -41,7 +41,7 @@ h3 {
 .header-container {
     background-image: url('../images/disney-princess-header.jpg');
     background-size: cover;
-    height: 290px;
+    height: 300px;
     background-position: 0 30%;
 }
 
@@ -68,8 +68,9 @@ h3 {
 }
 
 .content-wrapper {
-    height: 510px;
+    height: 540px;
     margin: 0 50px 50px 50px;
+    padding-bottom: 15px;
     border-bottom: dashed;
     border-bottom-color: #eeeeee;
 }
@@ -106,7 +107,7 @@ h3 {
 .accordion {
     background-color: #48abd9;
     font-family: 'ProximaNova-Bold';
-    font-size: medium;
+    font-size: 1em;
     color: #ffffff;
     cursor: pointer;
     padding: 10px;
@@ -125,7 +126,7 @@ h3 {
 .accord-panel {
     display: none;
     padding: 20px;
-    height: 106px;
+    height: 130px;
     column-count: 2;
     font-family: 'ProximaNova-Regular';
     border-style: solid;
@@ -133,8 +134,16 @@ h3 {
     border-color: #74c6d9;
 }
 
+.accord-panel h3 {
+    position: absolute;
+    margin-top: 0;
+}
+
 .accord-panel ul{
-    margin: 0;
+    margin: 30px 0 0 0;
+    position: absolute;
+    width: 58vw;
+    column-count: 2;
     padding: 0;
     list-style: none;
 }
@@ -146,24 +155,73 @@ h3 {
     margin-right: 10px;
 }
 
+.right-side {
+    float: right;
+    width: 28vw;
+    text-align: center;
+}
+
 .mail-form {
     width: 28vw;
     height: 440px;
     background-color: #d8eeef;
-    float: right;
     margin-top: -56px;
+    padding: 10px;
 }
 
-.mail-form:after {
-    content:'';
-    position: absolute;
-    right: 165px;
-    bottom: 265px;
+.avatar-container {
+    width: 125px;
+    height: 125px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-left: 30%
+}
+
+.mail-form-avatar {
+    display: inline;
+    height: 100%;
+    width: auto;
+    margin-left: -16%;
+}
+
+.mail-form-triangle {
     width: 0;
     height: 0;
-    border-top: solid 32px #d8eeef;
-    border-left: solid 50px transparent;
-    border-right: solid 50px transparent;
+    border-style: solid;
+    margin: auto;
+    border-width: 15px 30px 0 30px;
+    border-color: #d8eeef transparent transparent transparent;
+    line-height: 0px;
+    _border-color: #d8eeef #000000 #000000 #000000;
+    _filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000')
+}
+
+.close-box-container {
+    margin-top: 25px;
+    border-style: solid;
+    border-width: thin;
+    padding: 15px;
+    border-color: #ececec;
+    position: relative;
+}
+
+.close-btn {
+    position: absolute;
+    top: -7px;
+    right: -7px;
+}
+
+.close-text-1 {
+    font-family: 'ProximaNova-Bold';
+    color: #216071;
+    font-size: 1.1em;
+}
+
+.close-text-2 {
+    font-family: 'ProximaNova-RegularItalic';
+    color: #6db4c9;
+    margin-top: 2px;
+    font-size: .9em;
 }
 
 .footer {
@@ -174,5 +232,7 @@ h3 {
 .footer-text {
     font-family: 'ProximaNova-RegularItalic';
     color: #48abd9;
+    font-size: .9em;
+    margin-top: 10px;
 }
 
