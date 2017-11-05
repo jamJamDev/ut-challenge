@@ -31,7 +31,7 @@
 
             <button class="continue-btn" id="continueBtn" type="button" onclick="alert('Hello world!')">CONTINUE READING</button>
 
-            <button class="accordion">Don't forget to bring...</button><!-- crate circle with arrow -->
+            <button class="accordion">Don't forget to bring...<div class="arrow-circle" id="arrowCircle"><span class="right-arrow" id="rightArrow"></span></div></button>
             <div class="accord-panel" id="accordPanel">
                 <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>
                 <ul>
@@ -57,11 +57,11 @@
                     <section>
                         <div class="first-name" id="firstName">
                             <label>First Name:</label>
-                            <input class="first-name-text" id="firstNameText" type="text" name="firstName" placeholder="Leap">
+                            <input type="text" name="firstName" placeholder="Leap">
                         </div>
                         <div class="last-name" id="lastName">
                             <label>Last Name:</label>
-                            <input class="last-name-text" id="last-name-text" type="text" name="lastName" placeholder="Frog">
+                            <input type="text" name="lastName" placeholder="Frog">
                         </div>
                     </section>
 
@@ -74,11 +74,11 @@
 
                     <section>
                         <div class="city" id="city">
-                            <lable>City</lable>
+                            <label>City</label>
                             <input type="text" name="city" placeholder="Austin">
                         </div>
 
-                        <div>
+                        <div class="state" id="state">
                             <label>State</label>
                             <select>
                                 <option value="MS">MS</option>
@@ -88,12 +88,12 @@
                             </select>
                         </div>
 
-                        <div>
+                        <div class="zip" id="zip">
                             <label>Zip</label>
                             <input type="text" name="zip" placeholder="34210">
                         </div>
                     </section>
-                    <button type="submit">SIGN ME UP</button>
+                    <button class="submit-btn" id="submitBtn" type="submit">SIGN ME UP</button>
                 </form>
             </div>
             <div class="mail-form-triangle" id="mailFormTriangle"></div>

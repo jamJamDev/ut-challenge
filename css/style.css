@@ -68,7 +68,7 @@ h3 {
 }
 
 .content-wrapper {
-    height: 540px;
+    height: 565px;
     margin: auto;
     width: 1225px;
     padding-bottom: 15px;
@@ -104,6 +104,33 @@ h3 {
 .continue-btn:hover {
     /**cursor: url('../images/mickey-cursor.cur'), default;**/
     cursor: pointer;
+}
+
+.arrow-circle {
+    display: inline-block;
+    border-radius: 50%;
+}
+
+.right-arrow {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    border: 0.094em solid #ffffff;
+    border-radius: 50%;
+    margin-left: .5em;
+}
+
+.right-arrow:after {
+    content: '';
+    display: inline-block;
+    margin: 0 0 .06em .18em;
+    width: .3em;
+    height: .3em;
+    border-top: 0.15em solid #ffffff;
+    border-right: 0.15em solid #ffffff;
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
 }
 
 .accordion {
@@ -164,8 +191,9 @@ h3 {
 
 .mail-form-container {
     width: auto;
-    height: 460px;
+    height: 420px;
     background-color: #d8eeef;
+    box-shadow: 0 3px 10px #cfd1d1;
     margin-top: -56px;
     padding: 20px 30px 25px 30px;
     text-align: center;
@@ -182,28 +210,60 @@ h3 {
     display: inline-block;
 }
 
+.mail-me-text {
+    text-transform: uppercase;
+    font-family: ProximaNova-Bold;
+    color: #225f71;
+    margin: 15px;
+}
+
 .mail-form section {
     text-align: left;
+}
+
+.mail-form label {
+    margin-bottom: 4px;
+    color: #5f6062;
 }
 
 .mail-form label,
 .mail-form input {
     display: block;
     font-family: ProximaNova-Regular;
+    font-size: .8em;
 }
 
 .mail-form input,
 .mail-form select {
-    height: 25px;
     padding-left: 5px;
+    border-style: solid;
+    border-color: transparent;
+    margin-bottom: 10px;
 }
 
-.first-name {
+.mail-form input {
+    height: 25px;
+}
+
+.mail-form select {
+    height: 31px;
+}
+
+.mail-form input::placeholder {
+    color: #cccccc;
+}
+
+.first-name,
+.city,
+.state {
     margin-right: 10px;
 }
 
 .first-name,
-.left-name {
+.left-name,
+.city,
+.state,
+.zip {
     float: left;
 }
 
@@ -212,11 +272,24 @@ h3 {
     width: 130px;
 }
 
-.mail-me-text {
+.address input {
+    width: 280px;
+}
+
+.zip input {
+    width: 70px;
+}
+
+.submit-btn {
+    width: 100%;
+    margin-top: 12px;
+    background-color: #f6a12a;
+    border: none;
+    border-radius: 5px;
+    height: 35px;
+    font-family: ProximaNova-Regular;
+    color: #ffffff;
     text-transform: uppercase;
-    font-family: ProximaNova-Bold;
-    color: #225f71;
-    margin: 15px;
 }
 
 .mail-form-triangle {
@@ -267,7 +340,7 @@ h3 {
 
 .footer {
     text-align: center;
-    margin-bottom: 30px;
+    margin: 50px 0 30px 0;
 }
 
 .footer-text {
