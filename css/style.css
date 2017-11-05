@@ -199,6 +199,16 @@ h3 {
     text-align: center;
 }
 
+.mail-form-container:after {
+    content: '';
+    position: absolute;
+    margin: 34px 0 0 -40px;
+    margin-top: 34px;
+    border-style: solid;
+    border-width: 18px 40px 0 40px;
+    border-color: #d8eeef transparent transparent transparent;
+}
+
 .avatar-image {
     background-image: url('../images/avatar.jpg');
     background-repeat: no-repeat;
@@ -292,20 +302,8 @@ h3 {
     text-transform: uppercase;
 }
 
-.mail-form-triangle {
-    width: 0;
-    height: 0;
-    border-style: solid;
-    margin: auto;
-    border-width: 15px 30px 0 30px;
-    border-color: #d8eeef transparent transparent transparent;
-    line-height: 0px;
-    _border-color: #d8eeef #000000 #000000 #000000;
-    _filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000')
-}
-
 .close-box-container {
-    margin-top: 25px;
+    margin-top: 50px;
     border-style: solid;
     border-width: thin;
     padding: 15px;
