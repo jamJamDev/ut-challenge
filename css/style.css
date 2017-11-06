@@ -62,7 +62,7 @@ h3 {
     color: #ffffff;
     width: 270px;
     padding: 15px;
-    font-size: 2.2em;
+    font-size: 2.1em;
     text-align: center;
     text-transform: uppercase;
 }
@@ -347,4 +347,72 @@ h3 {
     font-size: .9em;
     margin-top: 10px;
 }
+
+@media only screen and (max-width: 1240px) {
+    .header-container {
+        height: 275px;
+    }
+
+    .content-wrapper{
+        width: 1000px;
+        height: 610px;
+    }
+
+    .info-content {
+        width: 610px;
+    }
+
+    .accord-panel ul {
+        width: 720px;
+    }
+
+    .right-side {
+        width: 320px;
+    }
+
+    .mail-form-container {
+        height: 420px;
+        margin-top: -33px
+    }
+
+    .first-name input, .last-name input {
+        width: 116px;
+    }
+
+    .address input {
+        width: 251px;
+    }
+
+    .city input {
+        width: 101px;
+    }
+}
+
+@media only screen and (max-width: 1240px) {
+    .header-container {
+        height: 240px;
+    }
+
+    .header-text {
+        left: 130px;
+    }
+
+    .content-wrapper{
+        width: 960px;
+        height: 630px;
+    }
+
+    .info-content {
+        width: 610px;
+    }
+
+    .accord-panel ul {
+        width: 510px;
+    }
+}
+
+@media only screen and (max-width: 980px) {
+
+}
+
 
