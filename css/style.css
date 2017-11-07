@@ -428,7 +428,153 @@ h3 {
 }
 
 @media only screen and (max-width: 980px) {
+    .content-wrapper {
+        width: 750px;
+        height: 670px;
+    }
 
+    .info-content {
+        width: 420px;
+    }
+
+    .packing-info {
+        column-count: 1;
+    }
+
+    .accord-panel ul {
+        font-size: .9em;
+        width: 390px;
+        margin-top: 48px;
+    }
+
+    .accord-panel h3 {
+        width: 370px;
+    }
+
+    .right-side {
+        width: 300px;
+    }
+
+    .first-name input,
+    .last-name input {
+        width: 105px;
+    }
+
+    .address input {
+        width: 231px;
+    }
+
+    .city input {
+        width: 94px;
+    }
+
+    .zip input {
+        width: 54px;
+    }
+
+    .close-box-container {
+        margin-top: 80px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .header-text {
+        left: 15%;
+    }
+
+    .content-wrapper {
+        width: 422px;
+        height: 1280px;
+    }
+
+    .right-side {
+        position: absolute;
+        width: 350px;
+        margin: 730px 0 0 39px;
+    }
+
+    .first-name input,
+    .last-name input {
+        width: 130px;
+    }
+
+    .address input {
+        width: 279px;
+    }
+
+    .close-box-container {
+        margin-top: 40px;
+    }
+
+    .city input {
+        width: 120px;
+    }
+
+    .zip input {
+        width: 77px;
+    }
+}
+
+@media only screen and (max-width: 440px) {
+    .header-text {
+        font-size: 1.6em;
+        width: 200px;
+    }
+
+    .content-wrapper {
+        width: 250px;
+        height: 1530px;
+    }
+
+    .info-content {
+        width: 250px;
+    }
+
+    h2 {
+        font-size: 1.11em;
+    }
+
+    h3 {
+        font-size: .95em;
+    }
+
+    .packing-info {
+        font-size: .85em;
+    }
+
+    .accord-panel {
+        height: 200px;
+    }
+
+    .accord-panel h3 {
+        width: 260px;
+    }
+
+    .accord-panel ul {
+        column-count: 1;
+        font-size: .8em;
+    }
+
+    .right-side {
+        width: 250px;
+        margin: 845px 0 0 0;
+    }
+
+    .mail-form-container {
+        width: auto;
+        height: 555px;
+    }
+
+    .first-name input,
+    .last-name input,
+    .address input,
+    .city input {
+        width: 178px;
+    }
+
+    .zip input {
+        width: 117px;
+    }
 }
 
 
