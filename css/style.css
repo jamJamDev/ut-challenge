@@ -202,10 +202,9 @@ h3 {
 .mail-form-container:after {
     content: '';
     position: absolute;
-    margin: 34px 0 0 -40px;
-    margin-top: 34px;
+    margin: 28px 0 0 -40px;
     border-style: solid;
-    border-width: 18px 40px 0 40px;
+    border-width: 28px 55px 0 55px;
     border-color: #d8eeef transparent transparent transparent;
 }
 
@@ -293,6 +292,10 @@ h3 {
 
 .address input {
     width: 280px;
+}
+
+.city input {
+    width: 128px;
 }
 
 .zip input {
@@ -385,7 +388,7 @@ h3 {
     }
 
     .first-name input, .last-name input {
-        width: 116px;
+        width: 115px;
     }
 
     .address input {
@@ -393,7 +396,11 @@ h3 {
     }
 
     .city input {
-        width: 101px;
+        width: 100px;
+    }
+
+    .zip input {
+        width: 68px;
     }
 }
 
