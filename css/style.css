@@ -207,6 +207,7 @@ h3 {
     position: relative;
     overflow: hidden;
     transform: rotate(180deg);
+    -moz-transform: rotate(180deg) scale(1.1);
 }
 
 .triangle:after {
