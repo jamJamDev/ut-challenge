@@ -99,7 +99,6 @@ h3 {
 
 
 .continue-btn:hover {
-    /**cursor: url('../images/mickey-cursor.cur'), default;**/
     cursor: pointer;
 }
 
@@ -321,6 +320,11 @@ h3 {
     font-family: ProximaNova-Regular;
     color: #ffffff;
     text-transform: uppercase;
+}
+
+.mail-form .submit-btn:hover {
+    cursor: pointer;
+    background-color: #f5a615;
 }
 
 .close-box-container {
