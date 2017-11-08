@@ -22,12 +22,14 @@ window.onload = function(){
     function formSubmit(e){
         e.preventDefault();
         console.log("E:", e);
-        var alertText = "";
-        for(var i = 0; i < e.srcElement.length - 1; i++){
-            alertText += e.srcElement[i].name + ": ";
+        var alertText = "",
+            form = e.srcElement || e.target;
 
-            if(e.srcElement[i].value !== ""){
-                alertText += e.srcElement[i].value;
+        for(var i = 0; i < form.length - 1; i++){
+            alertText += form[i].name + ": ";
+
+            if(form[i].value !== ""){
+                alertText += form[i].value;
             } else{
                 alertText += "N/A";
             }
