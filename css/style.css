@@ -193,12 +193,36 @@ h3 {
     width: auto;
     height: 420px;
     background-color: #d8eeef;
-    box-shadow: 0 3px 10px #bec5c5;
+    box-shadow: 0 3px 10px rgba(212,218,218,0.5);
     margin-top: -56px;
     padding: 20px 30px 25px 30px;
     text-align: center;
+    border: thin solid #d8e5e6;
 }
 
+.triangle {
+    width: 212px;
+    height: 98px;
+    margin-top: 34px;
+    position: relative;
+    overflow: hidden;
+    transform: rotate(180deg);
+}
+
+.triangle:after {
+    content: "";
+    position: absolute;
+    width: 58px;
+    height: 72px;
+    background: #d8eeef;
+    transform: rotate(113deg) skewY(45deg);
+    top: 75px;
+    left: 25px;
+    box-shadow: 7px -7px 10px 10px rgba(212, 218, 218, 0.5);
+    border: thin solid #d8e5e6;
+}
+
+/*
 .mail-form-container:after {
     content: '';
     position: absolute;
@@ -206,7 +230,7 @@ h3 {
     border-style: solid;
     border-width: 28px 55px 0 55px;
     border-color: #d8eeef transparent transparent transparent;
-}
+}*/
 
 .avatar-image {
     background-image: url('../images/avatar.jpg');
@@ -362,50 +386,6 @@ h3 {
 
 @media only screen and (max-width: 1240px) {
     .header-container {
-        height: 275px;
-    }
-
-    .content-wrapper{
-        width: 1000px;
-        height: 610px;
-    }
-
-    .info-content {
-        width: 610px;
-    }
-
-    .accord-panel ul {
-        width: 720px;
-    }
-
-    .right-side {
-        width: 320px;
-    }
-
-    .mail-form-container {
-        height: 420px;
-        margin-top: -33px
-    }
-
-    .first-name input, .last-name input {
-        width: 115px;
-    }
-
-    .address input {
-        width: 251px;
-    }
-
-    .city input {
-        width: 100px;
-    }
-
-    .zip input {
-        width: 68px;
-    }
-}
-
-@media only screen and (max-width: 1240px) {
-    .header-container {
         height: 240px;
     }
 
@@ -424,6 +404,35 @@ h3 {
 
     .accord-panel ul {
         width: 510px;
+    }
+
+    .right-side {
+        width: 320px;
+    }
+
+    .mail-form-container {
+        height: 420px;
+        margin-top: -33px;
+    }
+
+    .first-name input, .last-name input {
+        width: 115px;
+    }
+
+    .address input {
+        width: 251px;
+    }
+
+    .city input {
+        width: 100px;
+    }
+
+    .zip input {
+        width: 68px;
+    }
+
+    .triangle {
+        width: 193px;
     }
 }
 
@@ -475,6 +484,10 @@ h3 {
     .close-box-container {
         margin-top: 80px;
     }
+
+    .triangle {
+        width: 184px;
+    }
 }
 
 @media only screen and (max-width: 700px) {
@@ -512,6 +525,10 @@ h3 {
 
     .zip input {
         width: 77px;
+    }
+
+    .triangle {
+        width: 212px;
     }
 }
 
@@ -574,6 +591,10 @@ h3 {
 
     .zip input {
         width: 117px;
+    }
+
+    .triangle {
+        width: 160px;
     }
 }
 
