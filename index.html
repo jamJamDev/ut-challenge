@@ -6,9 +6,10 @@
 
     <link rel="shortcut icon" type="image/png" href="images/mickey.ico"/>
     <link rel="stylesheet" href="css/style.css" type="text/css">
+    <script src="js/main.js" type="text/javascript"></script>
+
 </head>
 <body>
-    <script src="js/main.js" type="text/javascript"></script>
     <div class="header-container" id="headerContainer">
         <div class="overlay" id="overlay"></div>
         <div class="header-text" id="headerText">PLAN YOUR DISNEY VACATION WITH US!</div>
@@ -31,7 +32,7 @@
 
             <button class="continue-btn" id="continueBtn" type="button" onclick="alert('I don\'t do anything yet')">CONTINUE READING</button>
 
-            <button class="accordion">Don't forget to bring...<div class="arrow-circle" id="arrowCircle"><span class="right-arrow" id="rightArrow"></span></div></button>
+            <button class="accordion" id="accordion" onclick="accordionClick()">Don't forget to bring...<div class="arrow-circle" id="arrowCircle"><span class="right-arrow" id="rightArrow"></span></div></button>
             <div class="accord-panel" id="accordPanel">
                 <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>
                 <ul>
@@ -50,7 +51,7 @@
         </div>
 
         <div class="right-side">
-            <div class="mail-form-container" id="mailFormContainer">
+            <div class="mail-form-container" id="mailFormContainer" onsubmit="formSubmit(event)">
                 <div class="avatar-image" id="avatarImage"></div>
                 <div class="mail-me-text" id="mailMeText">MAIL ME AN ITINERARY</div>
                 <form class="mail-form" id="mailForm">
@@ -100,7 +101,7 @@
 
 
             <div class="close-box-container" id="closeBoxContainer">
-                <img class="close-btn" id="closeBtn" src="images/close-button.png" title="close" />
+                <img class="close-btn" id="closeBtn" src="images/close-button.png" title="close" onclick="closeBtnClick()" />
                 <div class="close-text-1" id="closeText1">LET'S CLOSE THIS.</div>
                 <div class="close-text-2" id="closeText2">(using the x in the corner)</div>
             </div>

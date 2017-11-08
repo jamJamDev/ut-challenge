@@ -1,41 +1,40 @@
-window.onload = function(){
-    document.getElementById("mailForm").addEventListener("submit", formSubmit);
+/**
+ * Close Button Click Event
+ */
+function closeBtnClick(){
+    document.getElementsByClassName("close-box-container")[0].style.display = "none";
+}
 
-    var accord = document.getElementsByClassName("accordion"),
-        closeBtn = document.getElementsByClassName("close-btn"),
-        closeBoxContainer = document.getElementsByClassName("close-box-container");
+/**
+ * Form Submit Event
+ * @param event object
+ */
+function formSubmit(e){
+    e.preventDefault();
+    var alertText = "",
+        form = e.srcElement || e.target;
 
-    accord[0].onclick = function(){
-        this.classList.toggle("active");
+    for(var i = 0; i < form.length - 1; i++){
+        alertText += form[i].name + ": ";
 
-        var panel = this.nextElementSibling;
-        if(panel.style.display === "block")
-            panel.style.display = "none";
-        else
-            panel.style.display = "block";
-    };
-
-    closeBtn[0].onclick = function(){
-        closeBoxContainer[0].style.display = "none";
-    };
-
-    function formSubmit(e){
-        e.preventDefault();
-        console.log("E:", e);
-        var alertText = "",
-            form = e.srcElement || e.target;
-
-        for(var i = 0; i < form.length - 1; i++){
-            alertText += form[i].name + ": ";
-
-            if(form[i].value !== ""){
-                alertText += form[i].value;
-            } else{
-                alertText += "N/A";
-            }
-
-            alertText += "\n";
+        if(form[i].value !== ""){
+            alertText += form[i].value;
+        } else{
+            alertText += "N/A";
         }
-        alert(alertText);
+
+        alertText += "\n";
     }
-};
+    alert(alertText);
+}
+
+/**
+ * Accordion Click Event
+ */
+function accordionClick(){
+    var panel = document.getElementById('accordPanel');
+    if(panel.style.display === "block")
+        panel.style.display = "none";
+    else
+        panel.style.display = "block";
+}
