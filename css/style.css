@@ -57,8 +57,7 @@ h3 {
     top: 50px;
     left: 200px;
     font-family: 'Oswald-Regular';
-    border-style: solid;
-    border-width: thin;
+    border: thin solid #ffffff;
     color: #ffffff;
     width: 270px;
     padding: 15px;
@@ -72,8 +71,7 @@ h3 {
     margin: auto;
     width: 1225px;
     padding-bottom: 15px;
-    border-bottom: dashed;
-    border-bottom-color: #eeeeee;
+    border-bottom: thin dashed #eeeeee;
 }
 
 .info-content {
@@ -95,8 +93,7 @@ h3 {
     color: #48abd9;
     font-size: .8em;
     font-family: 'ProximaNova-Regular';
-    border: solid;
-    border-width: thin;
+    border: thin solid #48abd9;
     border-radius: 5px;
 }
 
@@ -158,9 +155,7 @@ h3 {
     height: 130px;
     column-count: 2;
     font-family: 'ProximaNova-Regular';
-    border-style: solid;
-    border-width: thin;
-    border-color: #74c6d9;
+    border: solid thin #74c6d9;
 }
 
 .accord-panel h3 {
@@ -223,16 +218,6 @@ h3 {
     border: thin solid #d8e5e6;
 }
 
-/*
-.mail-form-container:after {
-    content: '';
-    position: absolute;
-    margin: 28px 0 0 -40px;
-    border-style: solid;
-    border-width: 28px 55px 0 55px;
-    border-color: #d8eeef transparent transparent transparent;
-}*/
-
 .avatar-image {
     background-image: url('../images/avatar.jpg');
     background-repeat: no-repeat;
@@ -270,7 +255,6 @@ h3 {
 .mail-form input,
 .mail-form select {
     padding-left: 5px;
-    border-style: solid;
     border-color: transparent;
     margin-bottom: 10px;
 }
@@ -341,10 +325,8 @@ h3 {
 
 .close-box-container {
     margin-top: 50px;
-    border-style: solid;
-    border-width: thin;
+    border: thin solid #ececec;
     padding: 15px;
-    border-color: #ececec;
     position: relative;
     text-align: center;
     width: auto;
