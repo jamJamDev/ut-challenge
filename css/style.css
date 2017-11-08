@@ -311,15 +311,15 @@ h3 {
 
 .first-name input,
 .last-name input {
-    width: 130px;
+    width: 129px;
 }
 
 .address input {
-    width: 280px;
+    width: 278px;
 }
 
 .city input {
-    width: 128px;
+    width: 126px;
 }
 
 .zip input {
@@ -415,12 +415,13 @@ h3 {
         margin-top: -33px;
     }
 
-    .first-name input, .last-name input {
-        width: 115px;
+    .first-name input,
+    .last-name input {
+        width: 114px;
     }
 
     .address input {
-        width: 251px;
+        width: 248px;
     }
 
     .city input {
@@ -428,7 +429,7 @@ h3 {
     }
 
     .zip input {
-        width: 68px;
+        width: 66px;
     }
 
     .triangle {
@@ -466,15 +467,15 @@ h3 {
 
     .first-name input,
     .last-name input {
-        width: 105px;
+        width: 104px;
     }
 
     .address input {
-        width: 231px;
+        width: 228px;
     }
 
     .city input {
-        width: 94px;
+        width: 92px;
     }
 
     .zip input {
@@ -508,11 +509,11 @@ h3 {
 
     .first-name input,
     .last-name input {
-        width: 130px;
+        width: 129px;
     }
 
     .address input {
-        width: 279px;
+        width: 278px;
     }
 
     .close-box-container {
@@ -524,7 +525,7 @@ h3 {
     }
 
     .zip input {
-        width: 77px;
+        width: 76px;
     }
 
     .triangle {
@@ -590,7 +591,7 @@ h3 {
     }
 
     .zip input {
-        width: 117px;
+        width: 116px;
     }
 
     .triangle {
